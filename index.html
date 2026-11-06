@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André Ornellas &bull; Especialista em Infraestrutura de TI & Redes</title>
+    
+    <!-- Favicon Moderno em SVG Inline -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%232563eb'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='800' font-size='46'>AO</text></svg>">
+    
+    <!-- Tipografia contemporânea: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Folha de Estilos Externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR DE AÇÕES INTERATIVAS -->
+    <div class="top-toolbar">
+        <div class="toolbar-group">
+            <button class="action-button" id="theme-btn" onclick="toggleTheme()" title="Alternar entre modo claro e escuro">
+                <svg id="theme-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-5.4-5.4c0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
+                </svg>
+                <span id="theme-label">Modo Escuro</span>
+            </button>
+            <button class="action-button" onclick="copyText('andrefelipeornellas@gmail.com', 'E-mail')" title="Copiar e-mail para a área de transferência">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                </svg>
+                Copiar E-mail
+            </button>
+        </div>
+
+        <div class="toolbar-group">
+            <button class="action-button primary" onclick="window.print()" title="Imprimir currículo ou salvar como PDF">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+                </svg>
+                Imprimir / Salvar em PDF
+            </button>
+        </div>
+    </div>
+
+    <!-- CANVAS DO CURRÍCULO -->
+    <main class="resume-canvas">
+
+        <!-- CABEÇALHO HERO -->
+        <header class="hero-banner">
+            <div class="hero-header-row">
+                <div class="profile-title-block">
+                    <div class="status-pill">
+                        <span class="pulse-indicator"></span>
+                        Disponível para Oportunidades & Consultoria
+                    </div>
+                    <h1>ANDRÉ ORNELLAS</h1>
+                    <div class="headline">Especialista em Infraestrutura de TI & Redes de Computadores</div>
+                </div>
+
+                <div class="avatar-circle" title="André Ornellas">
+                    AO
+                </div>
+            </div>
+
+            <!-- CHIPS DE CONTATO INTERATIVOS -->
+            <div class="contact-pills-row">
+                <div class="contact-chip" title="Localização">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <span>Lauro de Freitas &bull; BA</span>
+                </div>
+
+                <a href="tel:71988324567" class="contact-chip" title="Ligar para André Ornellas">
+                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>(71) 98832-4567</span>
+                </a>
+
+                <button class="contact-chip" onclick="copyText('andrefelipeornellas@gmail.com', 'E-mail')" title="Clique para copiar o e-mail">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <span>andrefelipeornellas@gmail.com</span>
+                </button>
+
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-chip" title="Acessar perfil no LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.81a1.45 1.45 0 1 0 0 2.9 1.45 1.45 0 0 0 0-2.9z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- FAIXA BENTO (MÉTRICAS CHAVE) -->
+        <section class="bento-highlights">
+            <div class="bento-card">
+                <div class="bento-icon">
+                    <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                </div>
+                <div class="bento-data">
+                    <div class="bento-number">+25 Anos</div>
+                    <div class="bento-desc">Trajetória em TI</div>
+                </div>
+            </div>
+
+            <div class="bento-card">
+                <div class="bento-icon">
+                    <svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                </div>
+                <div class="bento-data">
+                    <div class="bento-number">2 Graduações</div>
+                    <div class="bento-desc">Sistemas & Redes</div>
+                </div>
+            </div>
+
+            <div class="bento-card">
+                <div class="bento-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                </div>
+                <div class="bento-data">
+                    <div class="bento-number">Nível Sênior</div>
+                    <div class="bento-desc">Alta Disponibilidade</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CORPO PRINCIPAL COM GRID DESIGN -->
+        <div class="layout-grid">
+
+            <!-- COLUNA ESQUERDA: PERFIL & EXPERIÊNCIA -->
+            <section>
+                
+                <!-- Resumo Executivo -->
+                <div class="section-headline">
+                    <h2>Perfil Profissional</h2>
+                </div>
+                <div class="statement-card">
+                    Profissional sênior com sólida trajetória em <strong>Infraestrutura de TI</strong>, <strong>Administração de Redes</strong> e <strong>Gestão de Suporte</strong>. Mais de duas décadas de experiência liderando sustentação de parques computacionais, resolução de incidentes críticos, gestão de servidores e estruturação de redes de comunicação com foco constante em segurança, estabilidade e continuidade operacional.
+                </div>
+
+                <!-- Trajetória Profissional -->
+                <div class="section-headline">
+                    <h2>Trajetória Profissional</h2>
+                </div>
+
+                <div class="timeline-stream">
+
+                    <!-- Experiência 1 -->
+                    <article class="job-entry">
+                        <div class="job-node"></div>
+                        <div class="job-meta-row">
+                            <h3 class="role-name">Analista em Infraestrutura</h3>
+                            <span class="date-pill">2020 &ndash; 2025</span>
+                        </div>
+                        <div class="organization-label">Ambiente Corporativo de Grande Porte</div>
+                        <ul class="bullet-list">
+                            <li>Sustentação contínua da infraestrutura de servidores e equipamentos de conectividade.</li>
+                            <li>Administração de roteadores, switches gerenciáveis e segmentação de tráfego de dados.</li>
+                            <li>Implementação de políticas de prevenção a incidentes e salvaguarda de dados corporativos.</li>
+                        </ul>
+                    </article>
+
+                    <!-- Experiência 2 -->
+                    <article class="job-entry">
+                        <div class="job-node"></div>
+                        <div class="job-meta-row">
+                            <h3 class="role-name">Gestor de T.I. Autônomo</h3>
+                            <span class="date-pill">2016 &ndash; 2020</span>
+                        </div>
+                        <div class="organization-label">Consultoria & Prestação de Serviços Técnicos</div>
+                        <ul class="bullet-list">
+                            <li>Consultoria em diagnóstico, cabeamento estruturado e modernização de redes empresariais.</li>
+                            <li>Planejamento de rotinas de contingência, segurança de perímetro e suporte a sistemas.</li>
+                            <li>Assessoria técnica personalizada para otimização de custos e aquisições de equipamentos.</li>
+                        </ul>
+                    </article>
+
+                    <!-- Experiência 3 -->
+                    <article class="job-entry">
+                        <div class="job-node"></div>
+                        <div class="job-meta-row">
+                            <h3 class="role-name">Técnico em T.I.</h3>
+                            <span class="date-pill">2000 &ndash; 2014</span>
+                        </div>
+                        <div class="organization-label">Bioecol</div>
+                        <ul class="bullet-list">
+                            <li>14 anos de atuação na consolidação do parque tecnológico e suporte técnico a usuários.</li>
+                            <li>Manutenção avançada de computadores, servidores internos e periféricos corporativos.</li>
+                            <li>Gerenciamento rigoroso de rotinas de backup, controle de acessos e continuidade de serviços.</li>
+                        </ul>
+                    </article>
+
+                    <!-- Experiência 4 -->
+                    <article class="job-entry">
+                        <div class="job-node"></div>
+                        <div class="job-meta-row">
+                            <h3 class="role-name">Técnico em Redes</h3>
+                            <span class="date-pill">2000</span>
+                        </div>
+                        <div class="organization-label">Telemar</div>
+                        <ul class="bullet-list">
+                            <li>Instalação, testes de atenuação de sinal e diagnóstico em linhas de transmissão de telecomunicações.</li>
+                        </ul>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- COLUNA DIREITA: FORMAÇÃO, SKILLS & DESTAQUES -->
+            <aside class="sidebar-panel">
+
+                <!-- Formação Acadêmica -->
+                <section>
+                    <div class="section-headline">
+                        <h2>Formação</h2>
+                    </div>
+                    <div class="education-stack">
+                        <div class="education-tile">
+                            <div class="degree-title">Analista de Sistemas</div>
+                            <div class="degree-meta">
+                                <span>Universidade Gama Filho</span>
+                                <span class="year-tag">2014</span>
+                            </div>
+                        </div>
+
+                        <div class="education-tile">
+                            <div class="degree-title">Tecnólogo em Redes de Computadores</div>
+                            <div class="degree-meta">
+                                <span>Suse</span>
+                                <span class="year-tag">2000</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Competências Técnicas (Chips) -->
+                <section>
+                    <div class="section-headline">
+                        <h2>Competências</h2>
+                    </div>
+                    <div class="competencies-box">
+                        <div class="competency-group">
+                            <h4>Redes & Telecom</h4>
+                            <div class="chip-cluster">
+                                <span class="skill-chip featured">TCP/IP</span>
+                                <span class="skill-chip featured">Roteamento</span>
+                                <span class="skill-chip">VLANs</span>
+                                <span class="skill-chip">Switches</span>
+                                <span class="skill-chip">Cabeamento</span>
+                                <span class="skill-chip">Telecom</span>
+                            </div>
+                        </div>
+
+                        <div class="competency-group">
+                            <h4>Sistemas & Infra</h4>
+                            <div class="chip-cluster">
+                                <span class="skill-chip">Windows Server</span>
+                                <span class="skill-chip">Linux</span>
+                                <span class="skill-chip">Rotinas de Backup</span>
+                                <span class="skill-chip">Suporte N3</span>
+                                <span class="skill-chip">Hardware</span>
+                            </div>
+                        </div>
+
+                        <div class="competency-group">
+                            <h4>Gestão & Práticas</h4>
+                            <div class="chip-cluster">
+                                <span class="skill-chip">Consultoria TI</span>
+                                <span class="skill-chip">Governança ITIL</span>
+                                <span class="skill-chip">SLA & Incidentes</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Destaques de Resultados -->
+                <section>
+                    <div class="section-headline">
+                        <h2>Destaques de Atuação</h2>
+                    </div>
+
+                    <div class="highlight-mini-card">
+                        <h5>🛡️ Segurança & Continuidade</h5>
+                        <p>Segmentação e políticas de salvaguarda de dados com rápida recuperação contra desastres (*Disaster Recovery*).</p>
+                    </div>
+
+                    <div class="highlight-mini-card">
+                        <h5>⚡ Alta Disponibilidade</h5>
+                        <p>Monitoramento preventivo reduzindo o índice de paradas não programadas em ambientes críticos.</p>
+                    </div>
+                </section>
+
+                <!-- Idiomas -->
+                <section>
+                    <div class="section-headline">
+                        <h2>Idiomas</h2>
+                    </div>
+                    <p style="font-size: 0.88rem; color: var(--text-body);">
+                        <strong>Inglês Técnico:</strong> Leitura fluente de documentações técnicas, manuais de infraestrutura e topologias de rede.
+                    </p>
+                </section>
+
+            </aside>
+
+        </div>
+
+        <!-- RODAPÉ CLEAN -->
+        <footer class="footer-stamp">
+            <div><strong>André Ornellas</strong> &bull; Lauro de Freitas, BA</div>
+            <div>Currículo Técnico &bull; Otimizado para Impressão e PDF</div>
+        </footer>
+
+    </main>
+
+    <!-- TOAST POPUP (FEEDBACK VISUAL) -->
+    <div id="toast" class="toast-popup">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#10b981"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        <span id="toast-text">Copiado com sucesso!</span>
+    </div>
+
+    <!-- Script Externo -->
+    <script src="script.js"></script>
+
+</body>
+</html>
